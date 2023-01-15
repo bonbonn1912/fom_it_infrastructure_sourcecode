@@ -5,6 +5,7 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   let response = decrypt(5000, 100);
+  res.statusCode = 200;
   res.send(response);
 });
 
@@ -35,5 +36,5 @@ const getRandomString = (length) => {
 };
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Encryption App listening on port ${port}`);
 });

@@ -1,7 +1,7 @@
 const crypto = require("crypto");
 
 exports.helloWorld = (req, res) => {
-  let response = decrypt(5000, 100);
+  let response = decrypt(500, 50);
   res.status(200).send(response);
 };
 
